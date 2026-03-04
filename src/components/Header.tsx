@@ -2,7 +2,7 @@ export default function Header () {
     return (
 
         <header>
-            <img src="../Gallery/Logo.svg" alt="" />
+            <img src="/images/Logo.svg" alt="" />
                 <nav>
                     <ul>
                         <li><a href="#projects">Projects</a></li>
