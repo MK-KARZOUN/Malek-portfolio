@@ -2,7 +2,9 @@ import { CaseStudyModel } from "./models/CaseStudyModel";
 import { SkillModel } from "./models/SkillModel";
 import { StackModel } from "./models/StackModel";
 import { TestimonialModel } from "./models/TestimonialModel";
-import { WizardStep } from "./models/WizardModel";
+import {  WizardStepModel } from "./models/WizardModel";
+
+export const colors = ["perpel", "light-blue", "orange", "green"];
 
 export const caseStudies: CaseStudyModel[] = [
   {
@@ -12,6 +14,7 @@ export const caseStudies: CaseStudyModel[] = [
     description:
       "Redesign af MitJob.ai, en AI-drevet jobplatform. Fokus på bedre informationsarkitektur, et mere logisk flow og mere tydelig forklaring af AI-funktioner.",
     link: "#",
+    date: "2025",
   },
   {
     image: "#",
@@ -20,6 +23,7 @@ export const caseStudies: CaseStudyModel[] = [
     description:
       "A research-driven brand website for an alcohol-free wine concept. The project combines user insights, structured information architecture, and a refined Nordic visual identity to create a clear, elegant, and fully responsive experience.",
     link: "#",
+    date: "2025",
   },
   {
     image: "#",
@@ -28,6 +32,7 @@ export const caseStudies: CaseStudyModel[] = [
     description:
       "User-centered website redesign for a Pilates studio, focused on clearer information architecture, improved navigation flow, and a stronger visual identity. Designed to simplify content structure and enhance user experience across devices.",
     link: "#",
+    date: "2024",
   },
 ];
 
@@ -77,7 +82,7 @@ export const texhStacks: StackModel[] = [
   },
 ];
 
-export const steps: WizardStep[] = [
+export const steps: WizardStepModel[] = [
   {
     title: "Multimedia Design ",
     image: "#",

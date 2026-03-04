@@ -5,10 +5,10 @@ export default function TestimonialCard({
   quote,
 }: TestimonialModel) {
   return (
-    <div>
-      <span>{author}</span>
-      <span>{position}</span>
-      <p>{quote}</p>
+    <div className="testimonial">
+      <p className="author">{author}</p>
+      <p className="position">{position}</p>
+      <p className="quote">{quote}</p>
     </div>
   );
 }

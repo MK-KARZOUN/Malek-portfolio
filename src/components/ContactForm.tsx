@@ -17,7 +17,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form>
+    <form className="contact-form">
       <input name="name" value={form.name} onChange={handleChange} />
       <input name="email" value={form.email} onChange={handleChange} />
       <textarea name="message" value={form.message} onChange={handleChange} />
