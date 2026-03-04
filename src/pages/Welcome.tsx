@@ -6,15 +6,20 @@ import TestimonialCard from "../components/TestimonialCard";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Button from "../components/ui/Button";
-import Wizard from "../components/ui/Wizard";
+import WizardStep from "../components/ui/WizardStep";
+
 import {
   caseStudies,
+  colors,
   skills,
   steps,
   testimonials,
   texhStacks,
 } from "../constants";
 
+const color = (index: number): string => {
+  return colors.at(index % 4) || "white";
+};
 export default function Welcome() {
   return (
     <div>
@@ -104,31 +109,33 @@ export default function Welcome() {
 
       {/* Tech Stack Section */}
       <section id="TechStack">
-        <span>CURRENT TECHNOLOGIES</span>
+        <span className="section-title">CURRENT TECHNOLOGIES</span>
         <h3>My Stack</h3>
-        <div>
-          {texhStacks.map((stack) => (
-            <StackCard key={stack.name} {...stack} />
+        <div className="stacks-list">
+          {texhStacks.map((stack, index) => (
+            <div className={color(index)}>
+              <StackCard key={stack.name} {...stack} />
+            </div>
           ))}
         </div>
       </section>
 
       {/* Carrer & Education */}
       <section id="Journy">
-        <span>JOURNY</span>
+        <span className="section-title">JOURNY</span>
         <h3>Career & Education</h3>
-        <div>
+        <div className="wizard">
           {steps.map((step) => (
-            <Wizard key={step.title} {...step} />
+            <WizardStep key={step.title} {...step} />
           ))}
         </div>
       </section>
 
       {/* Testimonials Section */}
       <section id="Testimonials">
-        <span>Testimonials</span>
+        <span className="section-title">Testimonials</span>
         <h3>What People Say</h3>
-        <div>
+        <div className="testimonials-list">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.author} {...testimonial} />
           ))}
@@ -137,7 +144,7 @@ export default function Welcome() {
 
       {/* Contact Section */}
       <section id="Contact">
-        <span>CONTACT</span>
+        <span className="section-title">CONTACT</span>
         <div>
           <span>Let's Build Something Exceptional</span>
           <ul>
