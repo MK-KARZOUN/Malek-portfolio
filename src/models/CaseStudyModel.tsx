@@ -4,4 +4,5 @@ export type CaseStudyModel = {
   title: string;
   description: string;
   link: string;
+  date : string;
 };

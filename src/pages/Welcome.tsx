@@ -21,7 +21,7 @@ export default function Welcome() {
       <Header />
 
       {/* Hero Section */}
-      <section>
+      <section id="hero">
         {/* Badge */}
         <div>
           <span>*</span>
@@ -47,7 +47,7 @@ export default function Welcome() {
         <p>
           Specialized in React, UX strategy, and scalable frontend architecture.
         </p>
-        <div>
+        <div className="d-flex">
           <Button name="View My Work" rightIcon="#" />
           <Button name="Get In Touch" />
         </div>
@@ -56,10 +56,19 @@ export default function Welcome() {
       {/* Projects Section */}
       <section id="CaseStudies">
         <div>
-          <span>SELECTED WORK</span>
-          <h3>Case Studies</h3>
+          <div>
+            <span className="section-title">SELECTED WORK</span>
+            <h3>Case Studies</h3>
+          </div>
+          <div>
+            <p className="prief">
+              Selected projects showcasing my approach to design and
+              development.
+            </p>
+          </div>
         </div>
-        <div>
+
+        <div className="case-study-list">
           {caseStudies.map((caseStudy) => (
             <CaseStudyCard key={caseStudy.number} {...caseStudy} />
           ))}
@@ -69,7 +78,7 @@ export default function Welcome() {
       {/* About Section */}
       <section id="About">
         <div>
-          <span>ABOUT ME</span>
+          <span className="section-title">ABOUT ME</span>
           <h3>Who Am I </h3>
           <p>
             I am a Multimedia Design student and expect to complete my degree in
@@ -86,7 +95,7 @@ export default function Welcome() {
           </p>
           <Button name="Download CV" rightIcon="#" />
         </div>
-        <div>
+        <div className="skills-list">
           {skills.map((skill) => (
             <Skill key={skill.name} {...skill} />
           ))}

@@ -5,16 +5,19 @@ export default function CaseStudyCard({
   title,
   description,
   link,
+  date
 }: CaseStudyModel) {
   return (
-    <div>
+    <div className="case-study">
       <div>
         <img src={image} alt="" />
+        <span className="date">{date}</span>
+        <div className="overlay"></div>
       </div>
       <div>
-        <span>{number}</span>
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <span className="number">{number}</span>
+        <h2 className="title">{title}</h2>
+        <p className="description">{description}</p>
         <a href={link}>View project</a>
       </div>
     </div>
