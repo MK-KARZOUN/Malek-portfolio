@@ -8,7 +8,7 @@ export const colors = ["perpel", "light-blue", "orange", "green"];
 
 export const caseStudies: CaseStudyModel[] = [
   {
-    image: "#",
+    image: "../public/images/Mitjob.ai-mockup.svg",
     number: "01",
     title: "Mitjob.ai",
     description:
@@ -17,7 +17,7 @@ export const caseStudies: CaseStudyModel[] = [
     date: "2025",
   },
   {
-    image: "#",
+    image: "../public/images/Havblink-mockup.svg",
     number: "02",
     title: "Havblink",
     description:
@@ -26,7 +26,7 @@ export const caseStudies: CaseStudyModel[] = [
     date: "2025",
   },
   {
-    image: "#",
+    image: "../public/images/AIM4-mockup.svg",
     number: "03",
     title: "AIM4",
     description:
@@ -38,25 +38,25 @@ export const caseStudies: CaseStudyModel[] = [
 
 export const skills: SkillModel[] = [
   {
-    icon: "#",
+    icon: "../public/images/hugeicons_investigation.svg",
     name: "UX Research",
     description:
       "User interviews, desk research, personas, user journeys, and usability testing. I focus on understanding real user needs before designing solutions.",
   },
   {
-    icon: "#",
+    icon: "../public/images/streamline_figma.svg",
     name: "UI Design",
     description:
       "Wireframing, prototyping, visual hierarchy, and scalable design systems in Figma. I design interfaces that are clear, structured, and intuitive.",
   },
   {
-    icon: "#",
+    icon: "../public/images/mingcute_code-line.svg",
     name: "Frontend Dev",
     description:
       "Building responsive React and Next.js applications with clean architecture. I prioritize performance, accessibility, and maintainable code.",
   },
   {
-    icon: "#",
+    icon: "../public/images/solar_database-linear.svg",
     name: "Backend Dev",
     description:
       "Building APIs, managing data flow, and structuring databases to ensure performance, scalability, and reliable user experiences.",
@@ -85,27 +85,27 @@ export const texhStacks: StackModel[] = [
 export const steps: WizardStepModel[] = [
   {
     title: "Multimedia Design ",
-    image: "#",
+    image: "../public/images/erhversakademi-arrhus.svg",
     period: "Jan 2025 - Present",
   },
   {
     title: "Full Stack Developer intern",
-    image: "#",
+    image: "../public/images/dansk socialarbejde.svg",
     period: "Jan 2024 - Jun 2024",
   },
   {
     title: "Web development bootcamp",
-    image: "#",
+    image: "../public/images/hack-your-future.svg",
     period: "Oct 2022 - Jul 2023",
   },
   {
     title: "Adgangskursus til Ingeniøruddannelse",
-    image: "#",
+    image: "../public/images/aarhus uni.svg",
     period: "Jan 2021 - Jan 2022",
   },
   {
     title: "Enkeltfag",
-    image: "#",
+    image: "../public/images/vuc.svg",
     period: "2018 - 2021",
   },
 ];
