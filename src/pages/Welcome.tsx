@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "../components/Header";
 import CaseStudyCard from "../components/CaseStudyCard";
 import Skill from "../components/Skill";
@@ -16,8 +17,26 @@ import {
 } from "../constants";
 
 export default function Welcome() {
+  const [showDevPopup, setShowDevPopup] = useState(true);
+
   return (
     <div className="portfolio-page">
+      {showDevPopup && (
+        <div className="dev-popup-overlay" role="dialog" aria-modal="true">
+          <div className="dev-popup">
+            <span className="dev-popup-kicker">Notice</span>
+            <h3>Site under development</h3>
+            <p>
+              This portfolio is still in progress. Case study detail pages will
+              be added soon.
+            </p>
+            <button type="button" onClick={() => setShowDevPopup(false)}>
+              Got it
+            </button>
+          </div>
+        </div>
+      )}
+
       <Header />
 
       <main>

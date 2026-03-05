@@ -46,6 +46,58 @@ img {
   min-height: 100vh;
 }
 
+.dev-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 9, 20, 0.65);
+  backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.dev-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: min(100%, 470px);
+  background: var(--section-a);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 1.3rem;
+}
+
+.dev-popup-kicker {
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+}
+
+.dev-popup h3 {
+  font-size: 1.35rem;
+}
+
+.dev-popup p {
+  color: var(--text-muted);
+}
+
+.dev-popup button {
+  background: #fff;
+  color: #0f1628;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dev-popup button:hover {
+  background: #f3f6ff;
+}
+
 .portfolio-page > header {
   width: min(94%, var(--container));
   margin: 0 auto;
@@ -397,16 +449,17 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 
 .stack {
   background: var(--bg-card-soft);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0.95rem;
+  border: 1px solid rgba(138, 152, 184, 0.35);
+  border-radius: 10px;
+  padding: 1.15rem;
 }
 
 .stack > span {
-  font-size: 0.82rem;
-  color: var(--yellow);
-  margin-bottom: 0.45rem;
+  font-size: 0.78rem;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
   display: block;
+  letter-spacing: 0.02em;
 }
 
 .stack ul {
@@ -416,6 +469,39 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 .stack li {
   color: var(--text-muted);
   font-size: 0.88rem;
+  margin-bottom: 0.15rem;
+}
+
+.stacks-list .stack:nth-child(1) {
+  border-color: rgba(130, 72, 255, 0.42);
+}
+
+.stacks-list .stack:nth-child(1) > span {
+  color: #8a48ff;
+}
+
+.stacks-list .stack:nth-child(2) {
+  border-color: rgba(66, 153, 255, 0.42);
+}
+
+.stacks-list .stack:nth-child(2) > span {
+  color: #42a3ff;
+}
+
+.stacks-list .stack:nth-child(3) {
+  border-color: rgba(255, 196, 31, 0.42);
+}
+
+.stacks-list .stack:nth-child(3) > span {
+  color: #ffc41f;
+}
+
+.stacks-list .stack:nth-child(4) {
+  border-color: rgba(0, 224, 144, 0.42);
+}
+
+.stacks-list .stack:nth-child(4) > span {
+  color: #00e090;
 }
 
 .wizard {
