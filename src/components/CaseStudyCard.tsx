@@ -9,12 +9,12 @@ export default function CaseStudyCard({
 }: CaseStudyModel) {
   return (
     <div className="case-study">
-      <div>
+      <div className="show-case">
         <img src={image} alt="" />
         <span className="date">{date}</span>
         <div className="overlay"></div>
       </div>
-      <div>
+      <div className="content">
         <span className="number">{number}</span>
         <h2 className="title">{title}</h2>
         <p className="description">{description}</p>

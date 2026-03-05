@@ -6,6 +6,8 @@
   --section-a: #0f121a;
   --section-b: #141821;
   --bg-card-soft: rgba(255, 255, 255, 0.05);
+  --bg-card-dark: rgba(0, 0, 0, 0.5);
+  --border-card: rgba(255, 255, 255, 0.2);
   --text-main: #f4f6ff;
   --text-muted: #b2bdd3;
   --line: rgba(171, 186, 217, 0.2);
@@ -340,9 +342,9 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 .case-study-row .case-study {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
   align-items: center;
-  padding: 1.2rem 0;
+  border: 1px solid var(--border-card);
+  margin-top: clamp(1.7rem, 15vh, 2.8rem);
 }
 
 .case-study-row.reverse .case-study > div:first-child {
@@ -368,24 +370,35 @@ main > section:not(.contact-section):nth-of-type(even)::before {
   position: absolute;
   top: 0.9rem;
   left: 0.9rem;
-  background: var(--bg-card-soft);
+  background: var(--bg-card-dark);
   color: var(--text-main);
   border: 1px solid #9aa7c2;
   border-radius: 999px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   padding: 0.16rem 0.5rem;
+  cursor: default;
 }
 
+.case-study .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
 .case-study .overlay {
   display: none;
 }
 
 .case-study .number {
   color: var(--yellow);
-  font-size: 2.3rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   line-height: 1;
   margin-bottom: 0.5rem;
   display: block;
+  font-weight: 100;
 }
 
 .case-study .title {
