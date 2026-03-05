@@ -162,6 +162,7 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 }
 
 .hero-badge {
+  --status-color: #13d082;
   font-size: 0.95rem;
   color: #dce5ff;
   background: transparent;
@@ -177,26 +178,51 @@ main > section:not(.contact-section):nth-of-type(even)::before {
   line-height: 1;
 }
 
+.hero-badge.is-working {
+  --status-color: #f59e0b;
+}
+
 .hero-badge-dot {
   width: 14px;
   height: 14px;
   flex: 0 0 14px;
   display: block;
   border-radius: 50%;
-  background: #0e653f;
+  background: var(--status-color);
   transform-origin: center;
   animation: heroDotPulse 1.4s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(19, 208, 130, 0.45);
 }
 
 @keyframes heroDotPulse {
   0%,
   100% {
-    transform: scale(0.7);
-    background: #14ba72;
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(19, 208, 130, 0.45);
   }
   50% {
-    transform: scale(0.95);
-    background: #08ea88;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 7px rgba(19, 208, 130, 0);
+  }
+}
+
+.hero-badge.is-working .hero-badge-dot {
+  box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+}
+
+.hero-badge.is-working .hero-badge-dot {
+  animation-name: heroDotPulseWorking;
+}
+
+@keyframes heroDotPulseWorking {
+  0%,
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 7px rgba(245, 158, 11, 0);
   }
 }
 

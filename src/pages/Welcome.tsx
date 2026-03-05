@@ -18,6 +18,13 @@ import {
 
 export default function Welcome() {
   const [showDevPopup, setShowDevPopup] = useState(true);
+  const availability = {
+    openToWork: true,
+    companyName: "",
+  };
+  const availabilityText = availability.openToWork
+    ? "Available for work"
+    : `Currently working at ${availability.companyName}`;
 
   return (
     <div className="portfolio-page">
@@ -41,9 +48,13 @@ export default function Welcome() {
 
       <main>
         <section id="hero" className="hero-section">
-          <div className="hero-badge">
+          <div
+            className={`hero-badge ${
+              availability.openToWork ? "" : "is-working"
+            }`}
+          >
             <span className="hero-badge-dot" aria-hidden="true" />
-            <span>Available for work</span>
+            <span>{availabilityText}</span>
           </div>
 
           <div className="hero-avatar">
@@ -52,7 +63,7 @@ export default function Welcome() {
 
           <p className="hero-location">
             Based in
-            <img src="/images/danish-flag.svg" alt="Denmark flag" />
+            <img src="/images/dansuh-flag.svg" alt="Denmark flag" />
           </p>
 
           <h1>
