@@ -13,7 +13,7 @@ export const caseStudies: CaseStudyModel[] = [
     title: "Mitjob.ai",
     description:
       "Redesign af MitJob.ai, en AI-drevet jobplatform. Fokus på bedre informationsarkitektur, et mere logisk flow og mere tydelig forklaring af AI-funktioner.",
-    link: "#",
+    link: "https://www.figma.com/proto/p33gJGa5mrAK4BdJ7aV3wG/MitJob.ai?page-id=0%3A1&node-id=11-202&viewport=4023%2C420%2C0.23&t=NFTEWf9ZGN3rUyrQ-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A581",
     date: "2025",
   },
   {
@@ -22,7 +22,7 @@ export const caseStudies: CaseStudyModel[] = [
     title: "Havblink",
     description:
       "A research-driven brand website for an alcohol-free wine concept. The project combines user insights, structured information architecture, and a refined Nordic visual identity to create a clear, elegant, and fully responsive experience.",
-    link: "#",
+    link: "https://www.figma.com/proto/39O3gmrw2C8QVqngyM97kO/Havblink?page-id=31%3A4&node-id=31-5&viewport=144%2C338%2C0.39&t=K0GMuC6RizZw8wkL-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=39%3A688",
     date: "2025",
   },
   {
@@ -31,7 +31,7 @@ export const caseStudies: CaseStudyModel[] = [
     title: "AIM4",
     description:
       "User-centered website redesign for a Pilates studio, focused on clearer information architecture, improved navigation flow, and a stronger visual identity. Designed to simplify content structure and enhance user experience across devices.",
-    link: "#",
+    link: "https://www.figma.com/proto/zTvOF0ZWfbWo40ZCVMzIkI/AIM4?page-id=0%3A1&node-id=287-1435&viewport=411%2C205%2C0.16&t=Sx9N46QPnnnpLHjZ-1&scaling=min-zoom&content-scaling=fixed",
     date: "2024",
   },
 ];
