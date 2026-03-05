@@ -5,7 +5,7 @@ export default function CaseStudyCard({
   title,
   description,
   link,
-  date
+  date,
 }: CaseStudyModel) {
   return (
     <div className="case-study">
@@ -18,7 +18,9 @@ export default function CaseStudyCard({
         <span className="number">{number}</span>
         <h2 className="title">{title}</h2>
         <p className="description">{description}</p>
-        <a href={link}>View project</a>
+        <a href={link} target="_blank">
+          View project
+        </a>
       </div>
     </div>
   );
