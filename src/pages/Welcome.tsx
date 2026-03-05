@@ -135,8 +135,13 @@ export default function Welcome() {
               code to build solutions that are both technically effective and
               provide a strong user experience.
             </p>
-            <a className="btn btn-light" href="#">
-              Download CV
+            <a
+              className="btn btn-light"
+              href="/Malek_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
             </a>
           </div>
 
