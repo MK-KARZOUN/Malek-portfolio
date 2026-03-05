@@ -2,13 +2,13 @@ import { CaseStudyModel } from "./models/CaseStudyModel";
 import { SkillModel } from "./models/SkillModel";
 import { StackModel } from "./models/StackModel";
 import { TestimonialModel } from "./models/TestimonialModel";
-import {  WizardStepModel } from "./models/WizardModel";
+import { WizardStepModel } from "./models/WizardModel";
 
 export const colors = ["perpel", "light-blue", "orange", "green"];
 
 export const caseStudies: CaseStudyModel[] = [
   {
-    image: "../public/images/Mitjob.ai-mockup.svg",
+    image: "/images/Mitjob.ai-mockup.svg",
     number: "01",
     title: "Mitjob.ai",
     description:
@@ -17,7 +17,7 @@ export const caseStudies: CaseStudyModel[] = [
     date: "2025",
   },
   {
-    image: "../public/images/Havblink-mockup.svg",
+    image: "/images/Havblink-mockup.svg",
     number: "02",
     title: "Havblink",
     description:
@@ -26,7 +26,7 @@ export const caseStudies: CaseStudyModel[] = [
     date: "2025",
   },
   {
-    image: "../public/images/AIM4-mockup.svg",
+    image: "/images/Aim4-mockup.svg",
     number: "03",
     title: "AIM4",
     description:
@@ -38,25 +38,25 @@ export const caseStudies: CaseStudyModel[] = [
 
 export const skills: SkillModel[] = [
   {
-    icon: "../public/images/hugeicons_investigation.svg",
+    icon: "/images/hugeicons_investigation.svg",
     name: "UX Research",
     description:
       "User interviews, desk research, personas, user journeys, and usability testing. I focus on understanding real user needs before designing solutions.",
   },
   {
-    icon: "../public/images/streamline_figma.svg",
+    icon: "/images/streamline_figma.svg",
     name: "UI Design",
     description:
       "Wireframing, prototyping, visual hierarchy, and scalable design systems in Figma. I design interfaces that are clear, structured, and intuitive.",
   },
   {
-    icon: "../public/images/mingcute_code-line.svg",
+    icon: "/images/mingcute_code-line.svg",
     name: "Frontend Dev",
     description:
       "Building responsive React and Next.js applications with clean architecture. I prioritize performance, accessibility, and maintainable code.",
   },
   {
-    icon: "../public/images/solar_database-linear.svg",
+    icon: "/images/solar_database-linear.svg",
     name: "Backend Dev",
     description:
       "Building APIs, managing data flow, and structuring databases to ensure performance, scalability, and reliable user experiences.",
@@ -84,28 +84,28 @@ export const texhStacks: StackModel[] = [
 
 export const steps: WizardStepModel[] = [
   {
-    title: "Multimedia Design ",
-    image: "../public/images/erhversakademi-arrhus.svg",
+    title: "Multimedia Design",
+    image: "/images/erhversakademi-arrhus.svg",
     period: "Jan 2025 - Present",
   },
   {
     title: "Full Stack Developer intern",
-    image: "../public/images/dansk socialarbejde.svg",
+    image: "/images/dansk socialarbejde.svg",
     period: "Jan 2024 - Jun 2024",
   },
   {
     title: "Web development bootcamp",
-    image: "../public/images/hack-your-future.svg",
+    image: "/images/hack-your-future.svg",
     period: "Oct 2022 - Jul 2023",
   },
   {
-    title: "Adgangskursus til Ingeniøruddannelse",
-    image: "../public/images/aarhus uni.svg",
+    title: "Adgangskursus til Ingenioruddannelse",
+    image: "/images/aarhus uni.svg",
     period: "Jan 2021 - Jan 2022",
   },
   {
     title: "Enkeltfag",
-    image: "../public/images/vuc.svg",
+    image: "/images/vuc.svg",
     period: "2018 - 2021",
   },
 ];
@@ -120,6 +120,7 @@ export const testimonials: TestimonialModel[] = [
   {
     author: "Maher K",
     position: "Software Engineer / Fullstack Developer",
-    quote: "",
+    quote:
+      "Malek combines strong technical execution with design awareness. He is reliable in delivery and communicates clearly throughout development.",
   },
 ];

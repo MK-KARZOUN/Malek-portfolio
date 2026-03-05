@@ -18,9 +18,26 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form">
-      <input name="name" value={form.name} onChange={handleChange} />
-      <input name="email" value={form.email} onChange={handleChange} />
-      <textarea name="message" value={form.message} onChange={handleChange} />
+      <input
+        name="name"
+        type="text"
+        placeholder="Your name"
+        value={form.name}
+        onChange={handleChange}
+      />
+      <input
+        name="email"
+        type="email"
+        placeholder="Email"
+        value={form.email}
+        onChange={handleChange}
+      />
+      <textarea
+        name="message"
+        placeholder="Message"
+        value={form.message}
+        onChange={handleChange}
+      />
       <button type="submit">Send</button>
     </form>
   );
