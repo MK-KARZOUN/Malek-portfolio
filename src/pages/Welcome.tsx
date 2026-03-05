@@ -63,7 +63,7 @@ export default function Welcome() {
 
           <p className="hero-location">
             Based in
-            <img src="/images/dansuh-flag.svg" alt="Denmark flag" />
+            <img src="/images/danish-flag.svg" alt="Denmark flag" />
           </p>
 
           <h1>
