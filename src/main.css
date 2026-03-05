@@ -1,7 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* define font-family satushi */
+@font-face {
+  font-family: "Satushi";
+  src: url("/fonts/Satoshi-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("/fonts/BDOGrotesk-Regular.woff") format("woff");
+  font-weight: 400;
 
+}
 :root {
   --section-a: #0f121a;
   --section-b: #141821;
@@ -30,7 +38,7 @@ html {
 body {
   background: var(--section-a);
   color: var(--text-main);
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: BDOGrotesk, "Poppins", "Segoe UI", sans-serif;
   line-height: 1.55;
 }
 
@@ -314,7 +322,10 @@ main > section:not(.contact-section):nth-of-type(even)::before {
   gap: 1.5rem;
   align-items: flex-start;
 }
-
+.section-kicker::before {
+  content: "● ";
+  font-size: 1rem;
+}
 .section-kicker {
   color: var(--yellow);
   font-size: 0.72rem;
@@ -393,8 +404,9 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 }
 
 .case-study .number {
+  font-family: Satushi, sans-serif;
   color: var(--yellow);
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: clamp(2rem, 7vw, 5rem);
   line-height: 1;
   margin-bottom: 0.5rem;
   display: block;
