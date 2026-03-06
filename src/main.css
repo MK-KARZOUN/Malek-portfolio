@@ -37,7 +37,7 @@ html {
 body {
   background: var(--section-a);
   color: var(--text-main);
-  font-family: BDOGrotesk, "Poppins", "Segoe UI", sans-serif;
+  font-family: "BDOGrotesk", "Poppins", "Segoe UI", sans-serif;
   line-height: 1.55;
 }
 
@@ -108,16 +108,15 @@ img {
 }
 
 .portfolio-page > header {
-  width: min(94%, var(--container));
-  margin: 0 auto;
-  padding: 1.5rem 0;
+  width: 100%;
+  padding: 1.5rem calc((100% - var(--container)) / 2);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 900;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) brightness(0.5);
 }
 
 .portfolio-page > header > img {
@@ -644,15 +643,6 @@ main > section:not(.contact-section):nth-of-type(even)::before {
   justify-self: start;
 }
 
-.contact-content .section-kicker,
-.contact-content h2,
-.contact-content li,
-.contact-content a,
-.contact-content p,
-.contact-content span {
-  color: #ffffff;
-}
-
 .contact-content h2 {
   max-width: 760px;
   margin-bottom: 2.8rem;
@@ -759,7 +749,7 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 
   .hero-badge {
     font-size: 0.85rem;
-    padding: 0;
+    padding: 0.5rem 1rem;
   }
 
   .hero-avatar {
