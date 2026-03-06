@@ -58,12 +58,18 @@ export default function Welcome() {
           </div>
 
           <div className="hero-avatar">
-            <img src="/images/malek-img.svg" alt="Malek portrait" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/malek-img.svg`}
+              alt="Malek portrait"
+            />
           </div>
 
           <p className="hero-location">
             Based in
-            <img src="/images/danish-flag.svg" alt="Denmark flag" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/danish-flag.svg`}
+              alt="Denmark flag"
+            />
           </p>
 
           <h1>
@@ -137,7 +143,7 @@ export default function Welcome() {
             </p>
             <a
               className="btn btn-light"
-              href="/Malek_CV.pdf"
+              href={`${import.meta.env.BASE_URL}Malek_CV.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >

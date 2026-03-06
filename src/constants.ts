@@ -5,10 +5,11 @@ import { TestimonialModel } from "./models/TestimonialModel";
 import { WizardStepModel } from "./models/WizardModel";
 
 export const colors = ["perpel", "light-blue", "orange", "green"];
+const baseUrl = import.meta.env.BASE_URL;
 
 export const caseStudies: CaseStudyModel[] = [
   {
-    image: "/images/Mitjob.ai-mockup.svg",
+    image: `${baseUrl}images/Mitjob.ai-mockup.svg`,
     number: "01",
     title: "Mitjob.ai",
     description:
@@ -17,7 +18,7 @@ export const caseStudies: CaseStudyModel[] = [
     date: "2025",
   },
   {
-    image: "/images/Havblink-mockup.svg",
+    image: `${baseUrl}images/Havblink-mockup.svg`,
     number: "02",
     title: "Havblink",
     description:
@@ -26,7 +27,7 @@ export const caseStudies: CaseStudyModel[] = [
     date: "2025",
   },
   {
-    image: "/images/Aim4-mockup.svg",
+    image: `${baseUrl}images/Aim4-mockup.svg`,
     number: "03",
     title: "AIM4",
     description:
@@ -38,25 +39,25 @@ export const caseStudies: CaseStudyModel[] = [
 
 export const skills: SkillModel[] = [
   {
-    icon: "/images/hugeicons_investigation.svg",
+    icon: `${baseUrl}images/hugeicons_investigation.svg`,
     name: "UX Research",
     description:
       "User interviews, desk research, personas, user journeys, and usability testing. I focus on understanding real user needs before designing solutions.",
   },
   {
-    icon: "/images/streamline_figma.svg",
+    icon: `${baseUrl}images/streamline_figma.svg`,
     name: "UI Design",
     description:
       "Wireframing, prototyping, visual hierarchy, and scalable design systems in Figma. I design interfaces that are clear, structured, and intuitive.",
   },
   {
-    icon: "/images/mingcute_code-line.svg",
+    icon: `${baseUrl}images/mingcute_code-line.svg`,
     name: "Frontend Dev",
     description:
       "Building responsive React and Next.js applications with clean architecture. I prioritize performance, accessibility, and maintainable code.",
   },
   {
-    icon: "/images/solar_database-linear.svg",
+    icon: `${baseUrl}images/solar_database-linear.svg`,
     name: "Backend Dev",
     description:
       "Building APIs, managing data flow, and structuring databases to ensure performance, scalability, and reliable user experiences.",
@@ -85,27 +86,27 @@ export const texhStacks: StackModel[] = [
 export const steps: WizardStepModel[] = [
   {
     title: "Multimedia Design",
-    image: "/images/erhversakademi-arrhus.svg",
+    image: `${baseUrl}images/erhversakademi-arrhus.svg`,
     period: "Jan 2025 - Present",
   },
   {
     title: "Full Stack Developer intern",
-    image: "/images/dansk socialarbejde.svg",
+    image: `${baseUrl}images/dansk socialarbejde.svg`,
     period: "Jan 2024 - Jun 2024",
   },
   {
     title: "Web development bootcamp",
-    image: "/images/hack-your-future.svg",
+    image: `${baseUrl}images/hack-your-future.svg`,
     period: "Oct 2022 - Jul 2023",
   },
   {
     title: "Adgangskursus til Ingenioruddannelse",
-    image: "/images/aarhus uni.svg",
+    image: `${baseUrl}images/aarhus uni.svg`,
     period: "Jan 2021 - Jan 2022",
   },
   {
     title: "Enkeltfag",
-    image: "/images/vuc.svg",
+    image: `${baseUrl}images/vuc.svg`,
     period: "2018 - 2021",
   },
 ];

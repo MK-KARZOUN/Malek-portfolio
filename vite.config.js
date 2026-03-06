@@ -8,5 +8,5 @@ export default defineConfig({
       "@": new URL("./src", import.meta.url).pathname,
     },
   },
-  base: "/Malek-portfolio",
+  base: "/Malek-portfolio/",
 });

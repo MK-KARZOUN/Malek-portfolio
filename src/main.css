@@ -1,12 +1,12 @@
 /* define font-family satushi */
 @font-face {
   font-family: "Satushi";
-  src: url("/fonts/Satoshi-Light.woff") format("woff");
+  src: url("./assets/fonts/Satoshi-Light.woff") format("woff");
   font-weight: 300;
 }
 @font-face {
   font-family: "BDOGrotesk";
-  src: url("/fonts/BDOGrotesk-Regular.woff") format("woff");
+  src: url("./assets/fonts/BDOGrotesk-Regular.woff") format("woff");
   font-weight: 400;
 }
 :root {
