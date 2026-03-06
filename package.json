@@ -1,12 +1,15 @@
 {
   "name": "malek-portfolio",
+  "homepage": "https://mk-karzoun.github.io/Malek-portfolio/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hello-pangea/dnd": "^16.6.0",
@@ -42,6 +45,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.0.0",
     "framer-motion": "^11.0.0",
+    "gh-pages": "^6.3.0",
     "leaflet": "^1.9.4",
     "lodash": "^4.17.21",
     "lucide-react": "^0.344.0",

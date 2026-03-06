@@ -7,5 +7,6 @@ export default defineConfig({
     alias: {
       "@": new URL("./src", import.meta.url).pathname,
     },
-  }
+  },
+  base: "/Malek-portfolio",
 });
