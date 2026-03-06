@@ -8,7 +8,6 @@
   font-family: "BDOGrotesk";
   src: url("/fonts/BDOGrotesk-Regular.woff") format("woff");
   font-weight: 400;
-
 }
 :root {
   --section-a: #0f121a;
@@ -608,6 +607,7 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 .testimonial {
   background: var(--bg-card-soft);
   border: 1px solid var(--line);
+  border-radius: 10px;
   padding: 1.1rem;
 }
 
