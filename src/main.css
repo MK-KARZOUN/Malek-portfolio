@@ -686,6 +686,11 @@ main > section:not(.contact-section):nth-of-type(even)::before {
   outline: none;
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(238, 242, 255, 0.72);
+}
+
 .contact-form textarea {
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 8px;
