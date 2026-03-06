@@ -114,6 +114,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  backdrop-filter: blur(10px);
 }
 
 .portfolio-page > header > img {
