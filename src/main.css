@@ -443,7 +443,8 @@ main > section:not(.contact-section):nth-of-type(even)::before {
 }
 
 .about-intro .btn {
-  margin-top: 0.5rem;
+  display: inline-block;
+  margin-top: 1.4rem;
 }
 
 .skills-list {
