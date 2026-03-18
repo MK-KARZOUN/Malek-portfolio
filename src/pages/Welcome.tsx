@@ -59,7 +59,7 @@ export default function Welcome() {
 
           <div className="hero-avatar">
             <img
-              src={`${import.meta.env.BASE_URL}images/malek-img.svg`}
+              src={`${import.meta.env.BASE_URL}images/malek-img.webp`}
               alt="Malek portrait"
             />
           </div>
@@ -67,7 +67,7 @@ export default function Welcome() {
           <p className="hero-location">
             Based in
             <img
-              src={`${import.meta.env.BASE_URL}images/danish-flag.svg`}
+              src={`${import.meta.env.BASE_URL}images/danish-flag.webp`}
               alt="Denmark flag"
             />
           </p>
